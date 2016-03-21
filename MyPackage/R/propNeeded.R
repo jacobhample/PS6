@@ -27,5 +27,5 @@ setMethod(f = "propNeeded",
           definition = function(candidate, remaining.delegates) {
             proportion <- (candidate@delegatesNeeded) / remaining.delegates
             return(ifelse(proportion <= 1, proportion,
-                          "Sorry, it looks like someone else has already locked up the nomination."))
+                          "Sorry, it looks you're going to have to count on a brokered convention."))
           })
