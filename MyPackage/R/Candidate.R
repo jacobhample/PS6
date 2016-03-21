@@ -36,10 +36,10 @@ setMethod("initialize", "Candidate",
             .Object@party <- party
             .Object@delegatesWon <- delegatesWon
             if(party == "Republican") {
-              .Object@delegatesNeeded <- 1237
+              .Object@delegatesNeeded <- 1237 - .Object@delegatesWon
             }
-            if(party == "Democratic") {
-              .Object@delegatesNeeded <- 2383
+            else if(party == "Democratic") {
+              .Object@delegatesNeeded <- 2383 - .Object@delegatesWon
             }
             else {
               stop("You have not chosen a valid party. Please specify either 'Democratic' or 'Republican'")
@@ -64,10 +64,10 @@ setMethod(f = "show",
 # Print method
 setMethod(f = "print",
           signature = "Candidate",
-          definition = function(object) {
-            print(paste("So far," object@name, "has won", object@delegatesWon, "delegates in the",
-                        object@party, "primary, and therefore needs", object@delegatesNeeded,
-                        "more delegates in order to secure the nomination.", sep = " "))
+          definition = function(x) {
+            paste("So far", x@name, "has won", x@delegatesWon, "delegates in the",
+                   x@party, "primary and therefore needs", x@delegatesNeeded,
+                   "more delegates in order to secure the nomination.", sep = " ")
           }
 )
 

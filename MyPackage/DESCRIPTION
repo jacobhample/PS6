@@ -1,9 +1,11 @@
 Package: MyPackage
 Title: Package for use during presidential nominating process
 Version: 0.1
-Authors: Jacob H. Hample
+Author: Jacob H. Hample
 Maintainer: Jacob H. Hample <jacob.hample@wustl.edu>
-Description: Package for use during presidential nominating process that can provide information on the status of the nomination process
+Description: Package for use during presidential nominating process that can
+    provide information on the status of the nomination process
 Depends:
     R (>= 3.2.3)
 License: WUSTL
+RoxygenNote: 5.0.1

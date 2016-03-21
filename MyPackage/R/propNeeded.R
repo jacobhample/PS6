@@ -19,13 +19,13 @@
 #' @export
 
 setGeneric(name = "propNeeded",
-           defintition = function(candidate, remaining.delegates)
+           def = function(candidate, remaining.delegates)
            {standardGeneric("propNeeded")}
 )
 
 setMethod(f = "propNeeded",
           definition = function(candidate, remaining.delegates) {
-            proportion <- (candidate@delegatesNeeded - candidate@delegatesWon) / remaining.delegates
+            proportion <- (candidate@delegatesNeeded) / remaining.delegates
             return(ifelse(proportion <= 1, proportion,
                           "Sorry, it looks like someone else has already locked up the nomination."))
           })
