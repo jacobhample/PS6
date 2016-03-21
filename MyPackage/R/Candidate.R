@@ -25,7 +25,7 @@ setClass(Class = "Candidate",
                    name = character(),
                    party = character(),
                    delegatesWon = numeric(),
-                   delegatesNeeded = numeric(),
+                   delegatesNeeded = numeric()
                    )
          )
 

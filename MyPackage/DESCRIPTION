@@ -1,9 +1,9 @@
 Package: MyPackage
-Type: Package
-Title: What the Package Does (Title Case)
+Title: Package for use during presidential nominating process
 Version: 0.1
-Date: 2016-03-20
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
-LazyData: TRUE
+Authors: Jacob H. Hample
+Maintainer: Jacob H. Hample <jacob.hample@wustl.edu>
+Description: Package for use during presidential nominating process that can provide information on the status of the nomination process
+Depends:
+    R (>= 3.2.3)
+License: WUSTL
