@@ -25,7 +25,7 @@
 #' @export
 
 setGeneric(name = "createCandidate",
-           def = function(name, party, delegatesWon)
+           defintion = function(name, party, delegatesWon)
            {standardGeneric("createCandidate")}
 )
 
